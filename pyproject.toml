@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "honeynet"
+version = "1.0.0"
+description = "Honeypot farm + deception grid: multi-protocol honeypots on loopback, engagement tracking, dwell/risk scoring, attack replay, MCP-honeypot mode"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "5h4d0wn1k"}]
+keywords = ["honeypot", "deception", "honeynet", "detection", "security", "blue-team", "dwell-time", "mqtt", "honeytoken"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+full = ["pyyaml>=6.0"]
+dev = ["pyyaml>=6.0"]
+
+[project.scripts]
+honeynet = "honeynet.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["honeynet*"]
