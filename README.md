@@ -1,4 +1,5 @@
 # honeynet
+![tests](https://github.com/5h4d0wn1k/honeynet/actions/workflows/ci.yml/badge.svg) ![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Honeypot farm + deception grid — multi-protocol honeypots on loopback ephemeral
 ports, engagement tracking with attack fingerprinting, dwell/risk scoring,
@@ -142,3 +143,6 @@ timings). Measure and record after each feature change.
 
 MIT — see [LICENSE](LICENSE). Authorized testing/education only; see the legal
 notice above.
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
